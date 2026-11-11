@@ -1,0 +1,54 @@
+[
+  {
+    "id": "proyavlennost",
+    "title": "Проявленность",
+    "subtitle": "Активация № 01",
+    "description": "О страхе проявляться, внутренних ограничениях, собственном достоинстве и смелости занимать своё место в мире.",
+    "shortDescription": "Позволь себе быть видимой. Позволь себе звучать. Позволь миру встретиться с настоящим тобой.",
+    "status": "current",
+    "cover": "assets/interior.webp",
+    "duration": "1:32:18",
+    "releaseDate": "12 мая 2026",
+    "videoUrl": "",
+    "featured": true
+  },
+  {
+    "id": "inner-support",
+    "title": "Внутренняя опора",
+    "subtitle": "Скоро",
+    "description": "Встреча о том, как возвращаться к себе и находить устойчивость в переменах.",
+    "shortDescription": "О мягкой устойчивости и доверии себе.",
+    "status": "soon",
+    "cover": "assets/interior.webp",
+    "duration": "",
+    "releaseDate": "",
+    "videoUrl": "",
+    "featured": false
+  },
+  {
+    "id": "relationships",
+    "title": "Гармония в отношениях",
+    "subtitle": "Скоро",
+    "description": "Тема о границах, внимательности и настоящем контакте с другим человеком.",
+    "shortDescription": "О бережности к себе и близким.",
+    "status": "soon",
+    "cover": "assets/interior.webp",
+    "duration": "",
+    "releaseDate": "",
+    "videoUrl": "",
+    "featured": false
+  },
+  {
+    "id": "trust",
+    "title": "Доверие к жизни",
+    "subtitle": "Скоро",
+    "description": "Пространство для исследования доверия, принятия и свободы быть собой.",
+    "shortDescription": "О встрече с новым и неизвестным.",
+    "status": "soon",
+    "cover": "assets/interior.webp",
+    "duration": "",
+    "releaseDate": "",
+    "videoUrl": "",
+    "featured": false
+  }
+]
