@@ -1,0 +1,89 @@
+media:
+  input: assets
+  output: assets
+  extensions: [jpg, jpeg, png, webp, svg]
+
+content:
+  - name: site
+    label: Главная страница
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: heroEyebrow
+        label: Имя над заголовком
+        type: string
+      - name: heroSubtitle
+        label: Подпись о Наталье
+        type: string
+      - name: heroTitle
+        label: Главный заголовок
+        type: text
+        description: Для переноса строки используйте Enter.
+      - name: heroDescription
+        label: Текст первого экрана
+        type: text
+      - name: heroImage
+        label: Фотография на первом экране
+        type: image
+      - name: aboutText
+        label: Текст «Обо мне»
+        type: text
+      - name: quoteText
+        label: Цитата Натальи
+        type: text
+      - name: consultationText
+        label: Описание консультации
+        type: text
+
+  - name: activations
+    label: Активации и записи
+    type: file
+    path: data/activations.json
+    format: json
+    list: true
+    fields:
+      - name: id
+        label: Внутренний ID (латиницей, уникальный)
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+      - name: title
+        label: Название
+        type: string
+        required: true
+      - name: subtitle
+        label: Подпись над названием
+        type: string
+      - name: description
+        label: Описание карточки
+        type: text
+      - name: shortDescription
+        label: Короткое описание в блоке видео
+        type: text
+      - name: status
+        label: Статус
+        type: select
+        required: true
+        options:
+          values:
+            - name: current
+              label: Актуальная
+            - name: soon
+              label: Скоро
+      - name: cover
+        label: Обложка
+        type: image
+      - name: duration
+        label: Длительность, например 1:32:18
+        type: string
+      - name: releaseDate
+        label: Дата выхода (текстом)
+        type: string
+      - name: videoUrl
+        label: Ссылка на встроенное видео Yandex Cloud Video
+        type: string
+        description: Пока видео нет, оставьте поле пустым. Для Yandex Cloud Video нужна ссылка из поля «Код вставки» (src).
+      - name: featured
+        label: Главная активация
+        type: boolean

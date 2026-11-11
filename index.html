@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eeecee" />
+    <!-- Временная демонстрация: не предлагать страницу поисковым системам. Это не защита доступа. -->
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="description" content="Наталья — пространство трансформации. Активации, глубокие встречи, медитации и индивидуальные консультации." />
+    <meta property="og:title" content="Наталья — пространство трансформации" />
+    <meta property="og:description" content="Мой голос. Твой отклик. Твоя трансформация." />
+    <meta property="og:type" content="website" />
+    <title>Наталья — Пространство трансформации</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" /></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" /></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19" /></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.7" /><path d="M4.5 21v-2c0-3.3 3.2-5.2 7.5-5.2s7.5 1.9 7.5 5.2v2" /></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.5 8.5c0 4-8.5 10-8.5 10s-8.5-6-8.5-10a4.5 4.5 0 0 1 8.5-2 4.5 4.5 0 0 1 8.5 2Z" /></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z" /></symbol>
+      <symbol id="i-lotus" viewBox="0 0 64 64"><path d="M32 51C23 42 22 32 32 18c10 14 9 24 0 33ZM32 52C16 50 9 42 9 27c15 3 22 11 23 25ZM32 52c16-2 23-10 23-25-15 3-22 11-23 25ZM31 52C18 57 9 54 2 43c11-4 21-2 29 9ZM33 52c13 5 22 2 29-9-11-4-21-2-29 9Z" /></symbol>
+      <symbol id="i-stones" viewBox="0 0 64 64"><ellipse cx="32" cy="48" rx="22" ry="8" /><ellipse cx="32" cy="35" rx="17" ry="7" /><ellipse cx="32" cy="22" rx="11" ry="6" /></symbol>
+      <symbol id="i-sprout" viewBox="0 0 64 64"><path d="M32 57V27M32 40C13 40 8 29 8 12c17 0 24 8 24 28ZM32 35c18 0 25-8 25-25-16 0-25 7-25 25Z" /></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="15" rx="2"/><path d="M7 3v5m10-5v5M3.5 10.5h17"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6.5V12l4 2.5"/></symbol>
+      <symbol id="i-sound" viewBox="0 0 24 24"><path d="M5 9h4l5-4v14l-5-4H5V9ZM17 9c2 1.5 2 4.5 0 6"/></symbol>
+    </svg>
+
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="На главную">
+          <span class="brand-script">Наталья</span>
+          <span class="brand-caption">пространство трансформации</span>
+        </a>
+        <nav class="desktop-nav" aria-label="Основная навигация">
+          <a href="#top" class="active">Главная</a>
+          <a href="#activations">Активации</a>
+          <a href="#consultation">Консультация</a>
+          <a href="#about">Обо мне</a>
+          <a href="#reviews">Отзывы</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-button account-icon" type="button" data-dialog="account" aria-label="Личный кабинет"><svg><use href="#i-user" /></svg></button>
+          <button class="pill-button button-green header-account" type="button" data-dialog="account">Мой кабинет</button>
+          <button class="icon-button mobile-menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Открыть меню"><svg><use href="#i-menu" /></svg></button>
+        </div>
+      </header>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация" hidden>
+        <a href="#top">Главная</a>
+        <a href="#activations">Активации</a>
+        <a href="#consultation">Консультация</a>
+        <a href="#about">Обо мне</a>
+        <a href="#reviews">Отзывы</a>
+        <button type="button" data-dialog="account">Мой кабинет</button>
+      </nav>
+
+      <main>
+        <section class="hero" aria-labelledby="heroTitle">
+          <div class="hero-image" id="heroImage"></div>
+          <div class="hero-content">
+            <div class="eyebrow-line"><span id="heroEyebrow">НАТАЛЬЯ</span><span class="eyebrow-rule"></span></div>
+            <p class="hero-subtitle" id="heroSubtitle">Проводник к себе. Активатор внутренних перемен.</p>
+            <h1 id="heroTitle">Мой голос. Твой отклик.<br />Твоя трансформация.</h1>
+            <p class="hero-description" id="heroDescription">Не все перемены начинаются с решений. Некоторые — с отклика. Иногда достаточно услышать слова, которые вдруг находят отклик глубоко внутри.</p>
+            <a class="pill-button button-mauve hero-cta" href="#about">Познакомиться со мной <svg><use href="#i-arrow" /></svg></a>
+          </div>
+        </section>
+
+        <section class="services" aria-label="Направления работы">
+          <a class="service" href="#activations"><svg class="service-icon"><use href="#i-lotus" /></svg><span>Активации и глубокие<br />встречи</span></a>
+          <a class="service" href="#consultation"><svg class="service-icon"><use href="#i-user" /></svg><span>Индивидуальная<br />консультация</span></a>
+          <a class="service" href="#meditations"><svg class="service-icon"><use href="#i-stones" /></svg><span>Медитации<br />и практики</span></a>
+          <a class="service" href="#closing"><svg class="service-icon"><use href="#i-sprout" /></svg><span>Пространство<br />для твоих изменений</span></a>
+        </section>
+
+        <section class="about-section section-padding" id="about">
+          <div class="about-image image-interior" role="img" aria-label="Уютный интерьер со свечой"></div>
+          <div class="about-copy">
+            <span class="section-kicker">Немного обо мне</span>
+            <h2>Я — Наталья.</h2>
+            <p id="aboutText">Проводник и целитель души. Помогаю людям углублять то, что уже живёт в них — их силу, чувствование, ясность, опору и внутреннюю свободу.</p>
+          </div>
+          <blockquote class="about-quote"><span class="quote-mark">“</span><span id="quoteText">Я не веду тебя к чужим ответам. Я сопровождаю тебя к твоим собственным.</span></blockquote>
+        </section>
+
+        <section class="consultation-section" id="consultation">
+          <div class="consultation-image image-interior"></div>
+          <div class="consultation-content">
+            <span class="section-kicker">Индивидуальная работа</span>
+            <h2>Индивидуальная консультация</h2>
+            <p id="consultationText">Личное пространство для глубокого разговора, разбора твоей ситуации и поиска опор. В доверительном диалоге ты сможешь услышать себя, увидеть новые смыслы и наметить направление для изменений.</p>
+            <button class="pill-button button-green" data-dialog="consultation" type="button">Записаться на консультацию <svg><use href="#i-arrow" /></svg></button>
+          </div>
+        </section>
+
+        <section class="catalog-section section-padding" id="activations">
+          <div class="catalog-heading-row">
+            <div class="catalog-heading">
+              <span class="section-kicker">Пространство внутренних перемен</span>
+              <h2>Мой голос. Твой отклик. Твоя трансформация.</h2>
+              <p>Активации — это авторские встречи о разных гранях внутреннего раскрытия. После каждой встречи ты получаешь авторскую, бережно оформленную видеоверсию, чтобы вернуться к важному в удобное для себя время.</p>
+            </div>
+            <div class="filter-list" role="group" aria-label="Фильтр активаций">
+              <button class="filter-chip selected" type="button" data-filter="all" aria-pressed="true">Все</button>
+              <button class="filter-chip" type="button" data-filter="current" aria-pressed="false">Актуальные</button>
+              <button class="filter-chip" type="button" data-filter="soon" aria-pressed="false">Скоро</button>
+            </div>
+          </div>
+          <div class="activation-grid" id="activationGrid" aria-live="polite">
+            <div class="loading-card">Загружаем пространство активаций...</div>
+          </div>
+          <div class="catalog-note"><svg class="note-icon"><use href="#i-sprout" /></svg><span>Темы активаций будут пополняться. Здесь появятся новые встречи, рождающиеся из живого процесса, запросов и актуальных тем.</span></div>
+        </section>
+
+        <section class="meditation-section section-padding" id="meditations">
+          <div class="meditation-heading">
+            <span class="section-kicker">Замедлиться и услышать себя</span>
+            <h2>Медитации и практики</h2>
+            <p>Маленькие островки тишины, к которым можно возвращаться в любой момент.</p>
+            <button class="text-link" type="button" data-dialog="meditations">Узнать о медитациях <svg><use href="#i-arrow" /></svg></button>
+          </div>
+          <div class="meditation-art image-interior"><div class="meditation-overlay"><svg class="service-icon"><use href="#i-stones" /></svg><span>Пространство<br />внутренней тишины</span></div></div>
+        </section>
+
+        <section class="featured-video section-padding" id="video">
+          <div class="video-frame">
+            <img src="assets/natalia-hero.webp" alt="Наталья — превью активации" loading="lazy" />
+            <button type="button" class="large-play" id="featuredPlay" aria-label="Открыть запись"><svg><use href="#i-play" /></svg></button>
+            <div class="video-bottom"><span class="video-label">Авторская видеоверсия активации</span><span>01 / 01</span></div>
+          </div>
+          <div class="featured-copy">
+            <span class="section-kicker">Активация № 01</span>
+            <h2 id="featuredTitle">Проявленность</h2>
+            <p id="featuredDescription">Позволь себе быть видимой. Позволь себе звучать. Позволь миру встретиться с настоящим тобой.</p>
+            <ul class="feature-meta">
+              <li><svg><use href="#i-calendar" /></svg><span>Авторская видеоверсия живой активации</span></li>
+              <li><svg><use href="#i-clock" /></svg><span id="featuredDuration">Длительность: 1:32:18</span></li>
+              <li><svg><use href="#i-sound" /></svg><span id="featuredDate">Дата выхода: 12 мая 2026</span></li>
+            </ul>
+            <button type="button" class="outline-button favorite-feature" id="featuredFavorite"><svg><use href="#i-heart" /></svg><span>Добавить в избранное</span></button>
+          </div>
+        </section>
+
+        <section class="reviews-section section-padding" id="reviews">
+          <div><span class="section-kicker">Живой отклик</span><h2>Слова, которые остаются</h2></div>
+          <p>Истории и впечатления участников появятся здесь после согласования с их авторами. Каждое переживание уникально и заслуживает бережного отношения.</p>
+        </section>
+
+        <section class="closing-section" id="closing">
+          <div class="closing-image image-interior"></div>
+          <div class="closing-copy"><h2>Готова к своим изменениям?</h2><p>Выбери активацию, консультацию или медитацию, которая откликается тебе сейчас.</p></div>
+          <a class="pill-button button-green" href="#activations">Перейти к активациям <svg><use href="#i-arrow" /></svg></a>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <a class="brand footer-brand" href="#top"><span class="brand-script">Наталья</span><span class="brand-caption">пространство трансформации</span></a>
+        <span>© <span id="year"></span> Наталья. Пространство трансформации.</span>
+        <a href="#top">Вернуться наверх ↑</a>
+      </footer>
+    </div>
+
+    <div class="modal-backdrop" id="modalBackdrop" hidden>
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button type="button" class="icon-button modal-close" id="modalClose" aria-label="Закрыть окно"><svg><use href="#i-close" /></svg></button>
+        <div class="modal-inner" id="modalContent"></div>
+      </section>
+    </div>
+    <noscript><p class="noscript-message">Для отображения каталога активаций включите JavaScript в браузере.</p></noscript>
+  </body>
+</html>
